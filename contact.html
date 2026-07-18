@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — VelintraLabs</title>
-  <meta name="description" content="Ready to build a business that performs better? Book a free strategy call with VelintraLabs.">
+  <meta name="description" content="Let's talk about where you want your business to go. Book a free strategy session with VelintraLabs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,9 +16,7 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
+        <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
         VelintraLabs
       </a>
       <ul class="nav-links" id="navLinks">
@@ -29,82 +27,406 @@
         <li><a href="insights.html">Insights</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Book a Strategy Call</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Book a Strategy Call</a></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
+  <!-- ═══════════════════════════════════════════
+       HERO
+       ═══════════════════════════════════════════ -->
+  <section class="contact-hero">
     <div class="container">
-      <span class="section-label">How Do We Start?</span>
-      <h1>Let's Talk About Your Business</h1>
-      <p class="lead">Book a free strategy call and we'll explore how better systems can help you attract more customers and simplify the way you operate.</p>
+      <h1>Let's Talk About Where You Want Your Business to Go.</h1>
+      <div class="contact-hero-lines fade-in">
+        <p>Every successful project starts with understanding the business behind it.</p>
+        <p>Whether you're looking to generate more customers, streamline operations, redesign your website, or explore AI solutions, the first step is a conversation.</p>
+        <p class="emphasis">No pressure. No obligation. Just a strategic discussion focused on your business.</p>
+      </div>
+      <div class="hero-ctas fade-in">
+        <a href="#form-section" class="btn btn-primary">Book Your Free Strategy Session</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section">
+  <!-- ═══════════════════════════════════════════
+       NOT A SALES CALL
+       ═══════════════════════════════════════════ -->
+  <section class="not-sales-section">
     <div class="container">
-      <div class="contact-grid">
-        <form class="contact-form fade-in" onsubmit="event.preventDefault(); alert('Thank you! We\'ll be in touch shortly.');">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" placeholder="John" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@company.com" required>
-          </div>
-          <div class="form-group">
-            <label for="company">Company Name</label>
-            <input type="text" id="company" name="company" placeholder="Your Company">
-          </div>
-          <div class="form-group">
-            <label for="service">What Can We Help With?</label>
-            <select id="service" name="service">
-              <option value="">Select a service...</option>
-              <option value="website">Website Design & Development</option>
-              <option value="automation">Business Automation</option>
-              <option value="ai">AI Solutions</option>
-              <option value="strategy">Strategy & Consulting</option>
-              <option value="other">Something Else</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Tell Us About Your Project</label>
-            <textarea id="message" name="message" placeholder="What challenges are you facing? What does success look like?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
-        </form>
+      <div class="not-sales-card fade-in">
+        <h2>This Isn't a Sales Call.<br>It's a Business Strategy Session.</h2>
+        <p>Most agencies begin by talking about what they sell. We begin by understanding what you're trying to achieve.</p>
+        <p style="margin-bottom:24px;">During our strategy session, we'll discuss:</p>
+        <div class="session-topics">
+          <div class="session-topic"><div class="session-check"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div> Your business goals</div>
+          <div class="session-topic"><div class="session-check"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div> Your current challenges</div>
+          <div class="session-topic"><div class="session-check"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div> Opportunities for improvement</div>
+          <div class="session-topic"><div class="session-check"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div> Your customer journey</div>
+          <div class="session-topic"><div class="session-check"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div> Operational bottlenecks</div>
+          <div class="session-topic"><div class="session-check"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div> Practical recommendations</div>
+        </div>
+        <div class="session-promise">Even if we don't work together, you'll leave the conversation with greater clarity.</div>
+      </div>
+    </div>
+  </section>
 
-        <div class="contact-info fade-in">
-          <div class="contact-info-card">
-            <h4>📞 Book a Strategy Call</h4>
-            <p>Prefer to talk? Book a free 30-minute strategy call where we'll discuss your business challenges and explore solutions.</p>
-            <a href="#" class="btn btn-ghost" style="margin-top: 12px; display: inline-flex;">Schedule a Call <span class="arrow">→</span></a>
+  <!-- ═══════════════════════════════════════════
+       CHOOSE YOUR PATH
+       ═══════════════════════════════════════════ -->
+  <section class="choose-path-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Get Started</span>
+        <h2>Choose How You'd Like to Start</h2>
+      </div>
+      <div class="choose-paths-grid fade-in">
+        <a href="#form-section" class="choose-path-card" data-path="website">
+          <div class="choose-path-icon" style="background:var(--color-primary-bg);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <div class="contact-info-card">
-            <h4>📧 Email Us</h4>
-            <p>Send us a message and we'll get back to you within 24 hours.</p>
-            <a href="mailto:hello@velintralabs.com" class="btn btn-ghost" style="margin-top: 12px; display: inline-flex;">hello@velintralabs.com</a>
+          <h3>I Need a Better Website</h3>
+          <p>I want to improve how my business attracts and converts customers.</p>
+          <span class="choose-path-cta">Book Website Strategy Session →</span>
+        </a>
+        <a href="#form-section" class="choose-path-card" data-path="automation">
+          <div class="choose-path-icon" style="background:#FEF3C7;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
           </div>
-          <div class="contact-info-card">
-            <h4>⏱ What to Expect</h4>
-            <p>After you reach out, we'll review your message and get back to you within one business day. If we're a good fit, we'll schedule a free strategy call to dive deeper.</p>
+          <h3>I Want to Automate My Business</h3>
+          <p>I'm spending too much time on manual work and repetitive tasks.</p>
+          <span class="choose-path-cta">Book Automation Consultation →</span>
+        </a>
+        <a href="#form-section" class="choose-path-card" data-path="ai">
+          <div class="choose-path-icon" style="background:#ECFDF5;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/><circle cx="12" cy="18" r="4"/></svg>
           </div>
+          <h3>I'm Exploring AI</h3>
+          <p>I'd like to understand how AI could improve my business.</p>
+          <span class="choose-path-cta">Book AI Discovery Call →</span>
+        </a>
+        <a href="#form-section" class="choose-path-card" data-path="audit">
+          <div class="choose-path-icon" style="background:#EDE9FE;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>I'm Not Sure Where to Begin</h3>
+          <p>I'd like an expert to assess my business and recommend the best next steps.</p>
+          <span class="choose-path-cta">Request a Business Performance Audit →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GUIDED FORM
+       ═══════════════════════════════════════════ -->
+  <section class="form-section" id="form-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Tell Us About Your Business</span>
+        <h2>Let's Start the Conversation</h2>
+        <p>A guided approach — not a long, intimidating form. Just the information we need to prepare for our conversation.</p>
+      </div>
+
+      <div class="guided-form fade-in" id="guidedForm">
+        <!-- Progress -->
+        <div class="form-progress">
+          <div class="form-progress-bar" id="progressBar" style="width:16.66%;"></div>
+        </div>
+        <div class="form-step-labels">
+          <span class="step-label active" data-step="1">1. Info</span>
+          <span class="step-label" data-step="2">2. Business</span>
+          <span class="step-label" data-step="3">3. Challenge</span>
+          <span class="step-label" data-step="4">4. Details</span>
+          <span class="step-label" data-step="5">5. Timeline</span>
+          <span class="step-label" data-step="6">6. Budget</span>
+        </div>
+
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <!-- Step 1: Basic Info -->
+          <div class="form-step active" data-step="1">
+            <h3>Basic Information</h3>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Full Name *</label><input type="text" id="name" name="name" placeholder="John Doe" required></div>
+              <div class="form-group"><label for="company">Company Name *</label><input type="text" id="company" name="company" placeholder="Your Company" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="email">Email Address *</label><input type="email" id="email" name="email" placeholder="john@company.com" required></div>
+              <div class="form-group"><label for="phone">Phone Number <span style="color:var(--color-text-light);font-weight:400;">(Optional)</span></label><input type="tel" id="phone" name="phone" placeholder="+234 xxx xxx xxxx"></div>
+            </div>
+          </div>
+
+          <!-- Step 2: About Business -->
+          <div class="form-step" data-step="2">
+            <h3>About Your Business</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="industry">What industry are you in?</label>
+                <select id="industry" name="industry">
+                  <option value="">Select an industry...</option>
+                  <option>Real Estate</option>
+                  <option>Professional Services</option>
+                  <option>Healthcare</option>
+                  <option>Financial Services</option>
+                  <option>Construction</option>
+                  <option>Education</option>
+                  <option>Technology</option>
+                  <option>Hospitality</option>
+                  <option>Retail / E-commerce</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="employees">Approximately how many employees?</label>
+                <select id="employees" name="employees">
+                  <option value="">Select...</option>
+                  <option>Just me</option>
+                  <option>2–5</option>
+                  <option>6–15</option>
+                  <option>16–50</option>
+                  <option>51–200</option>
+                  <option>200+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Do you currently have a website?</label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="hasWebsite" value="yes" onchange="document.getElementById('websiteUrl').style.display='block'"> Yes</label>
+                <label class="radio-label"><input type="radio" name="hasWebsite" value="no" onchange="document.getElementById('websiteUrl').style.display='none'"> No</label>
+              </div>
+            </div>
+            <div class="form-group" id="websiteUrl" style="display:none;">
+              <label for="url">Website URL</label>
+              <input type="url" id="url" name="url" placeholder="https://yourwebsite.com">
+            </div>
+          </div>
+
+          <!-- Step 3: Challenge -->
+          <div class="form-step" data-step="3">
+            <h3>Your Biggest Challenge</h3>
+            <p style="margin-bottom:20px;">What would you like to improve? Select all that apply.</p>
+            <div class="checkbox-grid">
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="leads"> Generate more leads</label>
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="website"> Improve website performance</label>
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="automate"> Automate repetitive work</label>
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="cx"> Improve customer experience</label>
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="systems"> Connect business systems</label>
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="ai"> Implement AI</label>
+              <label class="checkbox-label"><input type="checkbox" name="challenges" value="other"> Something else</label>
+            </div>
+          </div>
+
+          <!-- Step 4: Details -->
+          <div class="form-step" data-step="4">
+            <h3>Tell Us More</h3>
+            <div class="form-group">
+              <label for="goals">Describe your goals. What would success look like for you?</label>
+              <textarea id="goals" name="goals" rows="6" placeholder="E.g., We want to increase qualified enquiries from our website by 50% within 6 months. We also need to automate our client onboarding process..."></textarea>
+            </div>
+          </div>
+
+          <!-- Step 5: Timeline -->
+          <div class="form-step" data-step="5">
+            <h3>Timeline</h3>
+            <p style="margin-bottom:20px;">When would you like to start?</p>
+            <div class="radio-cards">
+              <label class="radio-card"><input type="radio" name="timeline" value="immediately"><span>Immediately</span></label>
+              <label class="radio-card"><input type="radio" name="timeline" value="30days"><span>Within 30 days</span></label>
+              <label class="radio-card"><input type="radio" name="timeline" value="90days"><span>Within 90 days</span></label>
+              <label class="radio-card"><input type="radio" name="timeline" value="researching"><span>Just researching</span></label>
+            </div>
+          </div>
+
+          <!-- Step 6: Budget -->
+          <div class="form-step" data-step="6">
+            <h3>Investment Range</h3>
+            <p style="margin-bottom:8px;">This helps us recommend the right solution for your business.</p>
+            <p style="margin-bottom:20px;font-size:0.875rem;color:var(--color-text-light);">This is used to tailor recommendations — not to filter you out.</p>
+            <div class="radio-cards">
+              <label class="radio-card"><input type="radio" name="budget" value="under2k"><span>Under $2,000</span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="2k-5k"><span>$2,000–$5,000</span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="5k-10k"><span>$5,000–$10,000</span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="10k+"><span>$10,000+</span></label>
+              <label class="radio-card"><input type="radio" name="budget" value="discuss"><span>Let's discuss</span></label>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="form-nav">
+            <button type="button" class="btn btn-secondary" id="prevBtn" onclick="changeStep(-1)" style="display:none;">← Back</button>
+            <button type="button" class="btn btn-primary" id="nextBtn" onclick="changeStep(1)">Next Step →</button>
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="display:none;">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHAT HAPPENS NEXT
+       ═══════════════════════════════════════════ -->
+  <section class="next-steps-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">What Happens Next</span>
+        <h2>From Enquiry to Engagement</h2>
+        <p>One of the biggest reasons people hesitate is uncertainty. Let's remove it.</p>
+      </div>
+      <div class="next-steps-grid fade-in">
+        <div class="next-step-card">
+          <div class="next-step-num">1</div>
+          <h4>Submit Your Request</h4>
+          <p>Tell us about your business using the form above.</p>
+        </div>
+        <div class="next-step-arrow">→</div>
+        <div class="next-step-card">
+          <div class="next-step-num">2</div>
+          <h4>We'll Review It</h4>
+          <p>We'll understand your goals before we speak.</p>
+        </div>
+        <div class="next-step-arrow">→</div>
+        <div class="next-step-card">
+          <div class="next-step-num">3</div>
+          <h4>Strategy Session</h4>
+          <p>We'll explore opportunities and answer your questions.</p>
+        </div>
+        <div class="next-step-arrow">→</div>
+        <div class="next-step-card">
+          <div class="next-step-num">4</div>
+          <h4>Tailored Recommendation</h4>
+          <p>If we're a good fit, we'll propose a solution aligned with your goals.</p>
         </div>
       </div>
+      <p style="text-align:center;margin-top:32px;font-weight:600;color:var(--color-text);">No surprises. No pressure.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHY BUSINESSES CHOOSE US
+       ═══════════════════════════════════════════ -->
+  <section class="why-choose-contact-section">
+    <div class="container">
+      <div class="why-choose-card fade-in">
+        <h2>Why Businesses Choose VelintraLabs</h2>
+        <p>You're not hiring us to build a website. You're hiring us to improve how your business performs.</p>
+        <p>That's why every recommendation starts with understanding your business — not selling a service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+       ═══════════════════════════════════════════ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list fade-in">
+        <div class="faq-item"><div class="faq-question"><h4>Is the strategy session free?</h4><div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-answer"><div class="faq-answer-inner"><p>Yes. It's an opportunity for us to understand your business and determine whether we're the right fit.</p></div></div></div>
+        <div class="faq-item"><div class="faq-question"><h4>How long does the session last?</h4><div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-answer"><div class="faq-answer-inner"><p>Typically 30–45 minutes.</p></div></div></div>
+        <div class="faq-item"><div class="faq-question"><h4>What if I'm not ready to start immediately?</h4><div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-answer"><div class="faq-answer-inner"><p>That's perfectly fine. Many of our clients begin with a conversation long before a project starts.</p></div></div></div>
+        <div class="faq-item"><div class="faq-question"><h4>Do you work with businesses outside Nigeria?</h4><div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely. We work remotely with clients in different regions and structure communication around their time zones.</p></div></div></div>
+        <div class="faq-item"><div class="faq-question"><h4>What happens after the strategy session?</h4><div class="faq-toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-answer"><div class="faq-answer-inner"><p>If there's a good fit, we'll prepare a tailored proposal outlining our recommendations, timelines, and investment.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       OTHER WAYS TO REACH US
+       ═══════════════════════════════════════════ -->
+  <section class="channels-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Other Channels</span>
+        <h2>Other Ways to Reach Us</h2>
+        <p>Prefer a different channel?</p>
+      </div>
+      <div class="channels-grid fade-in">
+        <a href="mailto:hello@velintralabs.com" class="channel-card">
+          <div class="channel-icon">📧</div>
+          <h4>Email</h4>
+          <p>hello@velintralabs.com</p>
+        </a>
+        <a href="#" class="channel-card">
+          <div class="channel-icon">📱</div>
+          <h4>WhatsApp</h4>
+          <p>Message us directly</p>
+        </a>
+        <a href="#" class="channel-card">
+          <div class="channel-icon">📅</div>
+          <h4>Schedule a Call</h4>
+          <p>Pick a time that works</p>
+        </a>
+        <a href="#" class="channel-card">
+          <div class="channel-icon">🌐</div>
+          <h4>LinkedIn</h4>
+          <p>Connect with us</p>
+        </a>
+      </div>
+      <p style="text-align:center;margin-top:24px;font-size:0.9375rem;color:var(--color-text-light);">We typically respond to enquiries within one business day.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BUSINESS READINESS SCORE
+       ═══════════════════════════════════════════ -->
+  <section class="readiness-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Before We Talk</span>
+        <h2>Quick Business Readiness Check</h2>
+        <p>Answer these five questions to get an instant snapshot of where your business stands.</p>
+      </div>
+      <div class="readiness-quiz fade-in" id="readinessQuiz">
+        <div class="readiness-questions">
+          <div class="readiness-q">
+            <label class="readiness-label">
+              <input type="checkbox" class="readiness-check" data-q="1">
+              <span>Does your website consistently generate qualified enquiries?</span>
+            </label>
+          </div>
+          <div class="readiness-q">
+            <label class="readiness-label">
+              <input type="checkbox" class="readiness-check" data-q="2">
+              <span>Are there repetitive tasks your team handles every day?</span>
+            </label>
+          </div>
+          <div class="readiness-q">
+            <label class="readiness-label">
+              <input type="checkbox" class="readiness-check" data-q="3">
+              <span>Do your business systems share information automatically?</span>
+            </label>
+          </div>
+          <div class="readiness-q">
+            <label class="readiness-label">
+              <input type="checkbox" class="readiness-check" data-q="4">
+              <span>Can you easily measure your marketing performance?</span>
+            </label>
+          </div>
+          <div class="readiness-q">
+            <label class="readiness-label">
+              <input type="checkbox" class="readiness-check" data-q="5">
+              <span>Do you feel your current systems can support the next stage of growth?</span>
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="calculateScore()" style="margin-top:24px;">Get My Score</button>
+        <div class="readiness-result" id="readinessResult" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FINAL CTA
+       ═══════════════════════════════════════════ -->
+  <section class="final-cta">
+    <div class="container fade-in">
+      <h2>Every Great Business Improvement Starts with a Conversation.</h2>
+      <p>Whether you already know what you need or you're simply exploring ways to improve your business, we'd love to hear your story. Let's build something that helps your business perform at its best.</p>
+      <a href="#form-section" class="btn btn-white">Book Your Free Strategy Session</a>
     </div>
   </section>
 
@@ -114,40 +436,14 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
-            <div class="nav-logo-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
+            <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
             VelintraLabs
           </a>
           <p>We help growing businesses attract more customers and run more efficiently through better systems.</p>
         </div>
-        <div class="footer-col">
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="insights.html">Insights</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Web Design & Development</a></li>
-            <li><a href="services.html">Business Automation</a></li>
-            <li><a href="services.html">AI Solutions</a></li>
-            <li><a href="services.html">Strategy & Consulting</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:hello@velintralabs.com">hello@velintralabs.com</a></li>
-            <li><a href="contact.html">Book a Strategy Call</a></li>
-          </ul>
-        </div>
+        <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="insights.html">Insights</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Web Design & Development</a></li><li><a href="services.html">Business Automation</a></li><li><a href="services.html">AI Solutions</a></li><li><a href="services.html">Business Audit</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:hello@velintralabs.com">hello@velintralabs.com</a></li><li><a href="contact.html">Book a Strategy Call</a></li></ul></div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 VelintraLabs. All rights reserved.</p>
@@ -160,5 +456,80 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    // ── Multi-step form ──
+    let currentStep = 1;
+    const totalSteps = 6;
+
+    function changeStep(direction) {
+      const current = document.querySelector('.form-step.active');
+      const next = document.querySelector(`.form-step[data-step="${currentStep + direction}"]`);
+      if (!next) return;
+      current.classList.remove('active');
+      next.classList.add('active');
+      currentStep += direction;
+      updateFormUI();
+    }
+
+    function updateFormUI() {
+      document.getElementById('progressBar').style.width = (currentStep / totalSteps * 100) + '%';
+      document.getElementById('prevBtn').style.display = currentStep > 1 ? 'inline-flex' : 'none';
+      document.getElementById('nextBtn').style.display = currentStep < totalSteps ? 'inline-flex' : 'none';
+      document.getElementById('submitBtn').style.display = currentStep === totalSteps ? 'inline-flex' : 'none';
+      document.querySelectorAll('.step-label').forEach(l => {
+        l.classList.toggle('active', parseInt(l.dataset.step) <= currentStep);
+      });
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your request has been submitted. We\'ll be in touch within one business day.');
+      return false;
+    }
+
+    // ── FAQ accordion ──
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+
+    // ── Business Readiness Score ──
+    function calculateScore() {
+      const checks = document.querySelectorAll('.readiness-check');
+      let yes = 0;
+      checks.forEach(c => { if (c.checked) yes++; });
+      const score = Math.round((yes / checks.length) * 100);
+      const result = document.getElementById('readinessResult');
+      let message = '', color = '', recommendation = '';
+
+      if (score >= 85) {
+        message = 'Your business has a strong foundation.';
+        color = 'var(--color-accent)';
+        recommendation = 'We can help you optimize further and unlock the next level of performance.';
+      } else if (score >= 60) {
+        message = 'There are clear opportunities to improve.';
+        color = '#D97706';
+        recommendation = 'A strategy session would help you identify the highest-impact improvements.';
+      } else {
+        message = 'Your business is likely being held back by system inefficiencies.';
+        color = '#DC2626';
+        recommendation = 'A Business Performance Audit is the best place to start.';
+      }
+
+      result.style.display = 'block';
+      result.innerHTML = `
+        <div style="text-align:center;padding:32px;background:var(--color-bg-alt);border-radius:var(--radius-lg);border:2px solid ${color};">
+          <div style="font-size:3rem;font-weight:800;color:${color};margin-bottom:8px;">${score}</div>
+          <h4 style="margin-bottom:8px;">${message}</h4>
+          <p style="margin-bottom:20px;">${recommendation}</p>
+          <a href="#form-section" class="btn btn-primary" style="font-size:0.875rem;">Book Your Strategy Session</a>
+        </div>
+      `;
+      result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
 </body>
 </html>
