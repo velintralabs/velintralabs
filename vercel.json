@@ -1,9 +1,12 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/:path*", "destination": "/:path*.html" }
-  ],
-  "redirects": [
-    { "source": "/:path*.html", "destination": "/:path/", "permanent": true }
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/portfolio", "destination": "/portfolio.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/method", "destination": "/method.html" },
+    { "source": "/insights", "destination": "/insights.html" },
+    { "source": "/resources", "destination": "/resources.html" },
+    { "source": "/contact", "destination": "/contact.html" }
   ]
 }
