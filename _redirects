@@ -1,0 +1,8 @@
+# Netlify _redirects file for clean URLs
+# Removes .html extension and enforces trailing slash
+
+/*  /index.html  200
+/:splat  /:splat.html  200
+
+# Redirect .html URLs to clean URLs
+/:path.html  /:path/  301
