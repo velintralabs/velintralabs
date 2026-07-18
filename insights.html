@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insights — VelintraLabs</title>
-  <meta name="description" content="Practical ideas for growing businesses. Insights on websites, automation, AI, customer experience, and operational efficiency.">
+  <meta name="description" content="Practical insights on websites, automation, AI, customer experience, and business systems. Ideas that help businesses perform better.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,9 +16,7 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
+        <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
         VelintraLabs
       </a>
       <ul class="nav-links" id="navLinks">
@@ -29,106 +27,522 @@
         <li><a href="insights.html" class="active">Insights</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Book a Strategy Call</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Book a Strategy Call</a></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
+  <!-- ═══════════════════════════════════════════
+       HERO + SEARCH
+       ═══════════════════════════════════════════ -->
+  <section class="insights-hero">
     <div class="container">
-      <span class="section-label">Do We Know What We're Talking About?</span>
-      <h1>Business Insights</h1>
-      <p class="lead">Practical ideas for growing businesses. Explore insights on websites, automation, AI, customer experience, and operational efficiency.</p>
+      <h1>Ideas That Help Businesses<br><span class="highlight" style="background:linear-gradient(135deg,var(--color-primary),var(--color-primary-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Perform Better.</span></h1>
+      <div class="insights-hero-lines fade-in">
+        <p>Technology changes quickly. Business principles don't.</p>
+        <p>Explore practical insights on websites, automation, AI, customer experience, and business systems — all designed to help you make better decisions and build a stronger business.</p>
+      </div>
+      <!-- Search Bar -->
+      <div class="insights-search fade-in">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search insights, topics, and resources..." id="searchInput">
+        </div>
+      </div>
+      <div class="hero-ctas fade-in" style="margin-top:24px;">
+        <a href="#articles" class="btn btn-primary">Browse Insights</a>
+        <a href="#newsletter" class="btn btn-secondary">Subscribe for Weekly Insights</a>
+      </div>
     </div>
   </section>
 
-  <!-- Featured Article -->
-  <section class="section-sm">
+  <!-- ═══════════════════════════════════════════
+       FEATURED INSIGHT
+       ═══════════════════════════════════════════ -->
+  <section class="featured-insight-section">
     <div class="container">
-      <div class="featured-card fade-in" style="max-width: 100%;">
-        <div class="featured-card-image" style="aspect-ratio: 21/9;">
-          <div class="placeholder-icon" style="width: 80px; height: 80px;">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <div class="featured-insight-card fade-in">
+        <div class="featured-insight-image">
+          <span class="featured-badge">Featured Insight</span>
+          <div class="featured-image-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
         </div>
-        <div class="featured-card-content" style="max-width: 600px;">
-          <span class="card-tag" style="margin-bottom: 12px;">Featured • Websites</span>
-          <h3 style="font-size: 1.5rem; margin-bottom: 12px;">Why Your Website Isn't Generating Enquiries (And How to Fix It)</h3>
-          <p style="margin-bottom: 16px;">Most business websites look good but fail to convert visitors into customers. In this deep-dive, we break down the framework we use to build websites that generate real business results.</p>
+        <div class="featured-insight-content">
+          <span class="insight-category">Website Strategy</span>
+          <h2>Why Most Business Websites Don't Generate Customers</h2>
+          <p>A website shouldn't just exist. It should attract attention, build trust, answer questions, remove hesitation, and encourage action.</p>
+          <p>Learn why many websites fail to do this — and what high-performing businesses do differently.</p>
+          <div class="insight-meta">
+            <span>📖 8 min read</span>
+            <span>VelintraLabs Team</span>
+            <span>July 2026</span>
+          </div>
           <a href="#" class="btn btn-ghost">Read Article <span class="arrow">→</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Articles Grid -->
-  <section class="section">
+  <!-- ═══════════════════════════════════════════
+       BROWSE BY TOPIC
+       ═══════════════════════════════════════════ -->
+  <section class="topics-section">
     <div class="container">
-      <h3 style="margin-bottom: 32px; font-size: 1.25rem;">All Articles</h3>
-      <div class="blog-grid">
-        <div class="blog-card fade-in">
-          <div class="blog-card-image"></div>
-          <div class="blog-card-content">
-            <div class="blog-category">Websites</div>
-            <h3>Why Your Website Isn't Generating Enquiries (And How to Fix It)</h3>
-            <p>Most business websites look good but fail to convert. Here's the framework to change that.</p>
+      <div class="section-header fade-in">
+        <span class="section-label">Browse by Topic</span>
+        <h2>Find What Matters to You</h2>
+      </div>
+      <div class="topics-grid fade-in">
+        <a href="#" class="topic-card">
+          <div class="topic-icon" style="background:var(--color-primary-bg);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-        </div>
-        <div class="blog-card fade-in">
-          <div class="blog-card-image"></div>
-          <div class="blog-card-content">
-            <div class="blog-category">Automation</div>
-            <h3>5 Repetitive Tasks That Are Costing Your Business Time and Money</h3>
-            <p>If your team is still doing these manually, you're leaving growth on the table.</p>
+          <h3>Website Strategy</h3>
+          <p>Design, UX, conversion optimization, speed, accessibility, SEO, landing pages.</p>
+          <span class="topic-count">12 articles</span>
+        </a>
+        <a href="#" class="topic-card">
+          <div class="topic-icon" style="background:#FEF3C7;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
           </div>
-        </div>
-        <div class="blog-card fade-in">
-          <div class="blog-card-image"></div>
-          <div class="blog-card-content">
-            <div class="blog-category">AI</div>
-            <h3>Practical Ways Small Businesses Can Use AI Starting Today</h3>
-            <p>AI isn't just for enterprises. Here's how smaller businesses can get real value from it.</p>
+          <h3>Automation</h3>
+          <p>Workflow automation, CRM, integrations, process improvement.</p>
+          <span class="topic-count">9 articles</span>
+        </a>
+        <a href="#" class="topic-card">
+          <div class="topic-icon" style="background:#ECFDF5;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/><circle cx="12" cy="18" r="4"/></svg>
           </div>
-        </div>
-        <div class="blog-card fade-in">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #EDE9FE, #DDD6FE);"></div>
-          <div class="blog-card-content">
-            <div class="blog-category">Customer Experience</div>
-            <h3>The Customer Journey Audit: A Simple Framework for Finding Leaks</h3>
-            <p>Most businesses lose customers at predictable points. Here's how to find and fix them.</p>
+          <h3>Artificial Intelligence</h3>
+          <p>Practical AI implementation, AI assistants, business automation.</p>
+          <span class="topic-count">7 articles</span>
+        </a>
+        <a href="#" class="topic-card">
+          <div class="topic-icon" style="background:#EDE9FE;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
           </div>
-        </div>
-        <div class="blog-card fade-in">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #FCE7F3, #FBCFE8);"></div>
-          <div class="blog-card-content">
-            <div class="blog-category">Operations</div>
-            <h3>How to Map Your Business Processes (and Why It Matters)</h3>
-            <p>You can't improve what you can't see. Process mapping gives you the clarity to optimise.</p>
+          <h3>Business Growth</h3>
+          <p>Customer experience, operational efficiency, systems thinking.</p>
+          <span class="topic-count">11 articles</span>
+        </a>
+        <a href="#" class="topic-card">
+          <div class="topic-icon" style="background:#FCE7F3;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#DB2777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
           </div>
+          <h3>Case Studies</h3>
+          <p>Behind-the-scenes thinking from real client projects.</p>
+          <span class="topic-count">5 articles</span>
+        </a>
+        <a href="#" class="topic-card">
+          <div class="topic-icon" style="background:#DBEAFE;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Industry Insights</h3>
+          <p>Analysis for real estate, healthcare, legal, and professional services.</p>
+          <span class="topic-count">8 articles</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       POPULAR ARTICLES
+       ═══════════════════════════════════════════ -->
+  <section class="articles-section" id="articles">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Popular Articles</span>
+        <h2>What Our Readers Find Most Useful</h2>
+      </div>
+      <div class="articles-list fade-in">
+        <article class="article-card-horizontal">
+          <div class="article-card-image" style="background:linear-gradient(135deg,#EEF2FF,#E0E7FF);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="article-card-body">
+            <div class="article-meta-top">
+              <span class="article-category-tag">Website Strategy</span>
+              <span class="article-read-time">📖 6 min read</span>
+            </div>
+            <h3>Your Website Isn't Losing Customers Because It Looks Bad. It's Losing Them Because It Creates Doubt.</h3>
+            <p>Every unanswered question. Every confusing layout. Every slow-loading page. Every unclear call-to-action. Creates friction. Here's how to remove it.</p>
+            <div class="article-meta-bottom">
+              <span>VelintraLabs Team</span>
+              <span>July 10, 2026</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Read More <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="article-card-horizontal">
+          <div class="article-card-image" style="background:linear-gradient(135deg,#ECFDF5,#D1FAE5);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-dark)" stroke-width="1.5"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/></svg>
+          </div>
+          <div class="article-card-body">
+            <div class="article-meta-top">
+              <span class="article-category-tag" style="color:#D97706;">Automation</span>
+              <span class="article-read-time">📖 5 min read</span>
+            </div>
+            <h3>Why Hiring More Staff Won't Fix Broken Processes</h3>
+            <p>Automation isn't about replacing people. It's about allowing people to spend more time doing valuable work. Here's why adding headcount to a broken system just scales the chaos.</p>
+            <div class="article-meta-bottom">
+              <span>VelintraLabs Team</span>
+              <span>July 3, 2026</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Read More <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="article-card-horizontal">
+          <div class="article-card-image" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/><circle cx="12" cy="18" r="4"/></svg>
+          </div>
+          <div class="article-card-body">
+            <div class="article-meta-top">
+              <span class="article-category-tag" style="color:var(--color-accent-dark);">Artificial Intelligence</span>
+              <span class="article-read-time">📖 7 min read</span>
+            </div>
+            <h3>AI Won't Replace Your Business. Businesses Using AI Will.</h3>
+            <p>How practical AI creates competitive advantage — not by replacing people, but by giving your existing team capabilities they didn't have yesterday.</p>
+            <div class="article-meta-bottom">
+              <span>VelintraLabs Team</span>
+              <span>June 25, 2026</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Read More <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="article-card-horizontal">
+          <div class="article-card-image" style="background:linear-gradient(135deg,#EDE9FE,#DDD6FE);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <div class="article-card-body">
+            <div class="article-meta-top">
+              <span class="article-category-tag" style="color:#7C3AED;">Business Growth</span>
+              <span class="article-read-time">📖 4 min read</span>
+            </div>
+            <h3>Before You Buy Another Software Tool, Read This</h3>
+            <p>Why disconnected systems often create bigger problems than they solve — and what to evaluate before adding another tool to your stack.</p>
+            <div class="article-meta-bottom">
+              <span>VelintraLabs Team</span>
+              <span>June 18, 2026</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Read More <span class="arrow">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       THE VELINTRALABS PERSPECTIVE (Long-form)
+       ═══════════════════════════════════════════ -->
+  <section class="perspective-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">The VelintraLabs Perspective</span>
+        <h2>Original Thinking. Not Trends.</h2>
+        <p>Every month we publish one long-form strategic article. Not news. Not hot takes. Original thinking designed to be bookmarked, shared, and revisited.</p>
+      </div>
+      <div class="perspective-grid fade-in">
+        <a href="#" class="perspective-card">
+          <div class="perspective-number">Vol. 01</div>
+          <h3>Why Every Business Should Think Like a Systems Company</h3>
+          <p>The businesses that scale aren't the ones with the best products. They're the ones with the best systems. Here's how to think about yours.</p>
+          <span class="perspective-meta">📖 15 min read · June 2026</span>
+        </a>
+        <a href="#" class="perspective-card">
+          <div class="perspective-number">Vol. 02</div>
+          <h3>The Hidden Cost of Operational Friction</h3>
+          <p>Every manual step, every disconnected system, every unclear process has a cost. Most businesses never calculate it. Here's how to start.</p>
+          <span class="perspective-meta">📖 12 min read · May 2026</span>
+        </a>
+        <a href="#" class="perspective-card">
+          <div class="perspective-number">Vol. 03</div>
+          <h3>The Real Purpose of a Business Website</h3>
+          <p>It's not to look good. It's not to showcase your team. It's to move strangers toward becoming customers. Most websites forget this.</p>
+          <span class="perspective-meta">📖 10 min read · April 2026</span>
+        </a>
+        <a href="#" class="perspective-card">
+          <div class="perspective-number">Vol. 04</div>
+          <h3>Growth Doesn't Break Businesses. Weak Systems Do.</h3>
+          <p>The moment growth creates chaos isn't a growth problem. It's a systems problem. Here's the framework to fix it before it happens.</p>
+          <span class="perspective-meta">📖 14 min read · March 2026</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BUSINESS RESEARCH
+       ═══════════════════════════════════════════ -->
+  <section class="research-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Business Research</span>
+        <h2>Original Research. Real Data.</h2>
+        <p>We don't just share opinions. We analyze real businesses, audit real websites, and publish original findings that help the entire industry perform better.</p>
+      </div>
+      <div class="research-grid fade-in">
+        <div class="research-card">
+          <div class="research-badge">Research Report</div>
+          <h3>The State of Business Websites 2027</h3>
+          <p>We analyzed 500 business websites across multiple industries to identify the most common mistakes and the practices that separate high performers from the rest.</p>
+          <div class="research-stats">
+            <div class="research-stat"><span class="stat-num">500+</span><span class="stat-desc">Websites Analyzed</span></div>
+            <div class="research-stat"><span class="stat-num">12</span><span class="stat-desc">Industries Covered</span></div>
+          </div>
+          <a href="#" class="btn btn-secondary" style="font-size:0.875rem;">Download Report</a>
         </div>
-        <div class="blog-card fade-in">
-          <div class="blog-card-image" style="background: linear-gradient(135deg, #FEF3C7, #FDE68A);"></div>
-          <div class="blog-card-content">
-            <div class="blog-category">Strategy</div>
-            <h3>The Two Systems Every Growing Business Needs to Get Right</h3>
-            <p>If growth feels chaotic, it's probably because one of these two systems is underperforming.</p>
+        <div class="research-card">
+          <div class="research-badge">Industry Report</div>
+          <h3>The Nigerian Business Automation Report</h3>
+          <p>How businesses waste thousands of hours annually on manual processes. Original research on automation adoption, barriers, and opportunities in the Nigerian market.</p>
+          <div class="research-stats">
+            <div class="research-stat"><span class="stat-num">200+</span><span class="stat-desc">Businesses Surveyed</span></div>
+            <div class="research-stat"><span class="stat-num">8</span><span class="stat-desc">Key Findings</span></div>
+          </div>
+          <a href="#" class="btn btn-secondary" style="font-size:0.875rem;">Download Report</a>
+        </div>
+        <div class="research-card">
+          <div class="research-badge">Benchmark Report</div>
+          <h3>Website Conversion Benchmark Report</h3>
+          <p>Real conversion statistics from websites we've audited. See how your website compares against industry averages and what the top performers do differently.</p>
+          <div class="research-stats">
+            <div class="research-stat"><span class="stat-num">150+</span><span class="stat-desc">Sites Audited</span></div>
+            <div class="research-stat"><span class="stat-num">24</span><span class="stat-desc">Metrics Tracked</span></div>
+          </div>
+          <a href="#" class="btn btn-secondary" style="font-size:0.875rem;">Download Report</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       READING PATHS (Learning Journeys)
+       ═══════════════════════════════════════════ -->
+  <section class="paths-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Recommended Reading</span>
+        <h2>Learning Paths for Every Challenge</h2>
+        <p>Instead of random articles, follow a structured journey designed to build your understanding step by step.</p>
+      </div>
+      <div class="paths-grid fade-in">
+        <div class="path-card">
+          <div class="path-icon" style="background:var(--color-primary-bg);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>If You're Redesigning Your Website</h3>
+          <ol class="path-steps">
+            <li>Why Most Websites Fail at Generating Customers</li>
+            <li>Building Trust Above the Fold</li>
+            <li>The Psychology of Conversion</li>
+            <li>Homepage Strategy: Beyond Aesthetics</li>
+            <li>Measuring Website Success Beyond Traffic</li>
+          </ol>
+          <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Start This Path <span class="arrow">→</span></a>
+        </div>
+        <div class="path-card">
+          <div class="path-icon" style="background:#FEF3C7;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/></svg>
+          </div>
+          <h3>If You're Interested in Automation</h3>
+          <ol class="path-steps">
+            <li>What Should You Automate First?</li>
+            <li>Common Automation Mistakes (And How to Avoid Them)</li>
+            <li>Workflow Mapping: See Your Processes Clearly</li>
+            <li>AI vs. Automation: What's the Difference?</li>
+            <li>Measuring the ROI of Automation</li>
+          </ol>
+          <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Start This Path <span class="arrow">→</span></a>
+        </div>
+        <div class="path-card">
+          <div class="path-icon" style="background:#ECFDF5;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+          </div>
+          <h3>If You're Preparing for Growth</h3>
+          <ol class="path-steps">
+            <li>Growth Doesn't Break Businesses. Weak Systems Do.</li>
+            <li>The Two Systems Every Growing Business Needs</li>
+            <li>Scaling Without Hiring: The AI Advantage</li>
+            <li>When to Invest in Systems vs. People</li>
+            <li>Building for the Next Stage of Your Business</li>
+          </ol>
+          <a href="#" class="btn btn-ghost" style="font-size:0.875rem;">Start This Path <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FREE RESOURCES
+       ═══════════════════════════════════════════ -->
+  <section class="resources-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Free Resources</span>
+        <h2>Tools & Templates for Better Business</h2>
+        <p>Practical resources you can download and use immediately. No fluff — just actionable tools.</p>
+      </div>
+      <div class="resources-grid fade-in">
+        <div class="resource-card">
+          <div class="resource-icon">📋</div>
+          <h4>Website Performance Checklist</h4>
+          <p>A 30-point checklist to evaluate whether your website is working as hard as it should.</p>
+          <a href="#" class="btn btn-secondary" style="font-size:0.8125rem; padding:10px 20px;">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">⚙️</div>
+          <h4>Business Automation Playbook</h4>
+          <p>Step-by-step guide to identifying, designing, and implementing automation in your business.</p>
+          <a href="#" class="btn btn-secondary" style="font-size:0.8125rem; padding:10px 20px;">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">🚀</div>
+          <h4>Website Launch Checklist</h4>
+          <p>Everything you need to check before going live. From SEO to performance to conversion readiness.</p>
+          <a href="#" class="btn btn-secondary" style="font-size:0.8125rem; padding:10px 20px;">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">📊</div>
+          <h4>Business Systems Audit Template</h4>
+          <p>Evaluate your current systems and identify the biggest opportunities for improvement.</p>
+          <a href="#" class="btn btn-secondary" style="font-size:0.8125rem; padding:10px 20px;">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">🎯</div>
+          <h4>Conversion Optimization Guide</h4>
+          <p>A practical guide to turning more website visitors into qualified enquiries.</p>
+          <a href="#" class="btn btn-secondary" style="font-size:0.8125rem; padding:10px 20px;">Download Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BUSINESS INTELLIGENCE HUB (Teaser)
+       ═══════════════════════════════════════════ -->
+  <section class="intelligence-section">
+    <div class="container">
+      <div class="intelligence-card fade-in">
+        <div class="intelligence-content">
+          <span class="section-label" style="background:rgba(79,70,229,0.2); color:var(--color-primary-light);">Coming Soon</span>
+          <h2>The Business Intelligence Hub</h2>
+          <p>More than a blog. A searchable library of practical tools, research, and insights that helps business owners make better decisions.</p>
+          <ul class="intelligence-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              Interactive calculators (ROI, website health, automation savings)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              Self-assessments with personalized recommendations
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              Industry benchmarks to compare your business
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              Short strategy videos and deep-dive research papers
+            </li>
+          </ul>
+          <a href="#" class="btn btn-white">Get Notified When It Launches</a>
+        </div>
+        <div class="intelligence-visual">
+          <div class="intelligence-mockup">
+            <div class="intelligence-mockup-header">
+              <div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div>
+            </div>
+            <div class="intelligence-mockup-body">
+              <div class="mock-bar" style="width:40%;"></div>
+              <div class="mock-bar" style="width:70%;"></div>
+              <div class="mock-chart">
+                <div class="mock-chart-bar" style="height:40%;"></div>
+                <div class="mock-chart-bar" style="height:65%;"></div>
+                <div class="mock-chart-bar" style="height:50%;"></div>
+                <div class="mock-chart-bar" style="height:80%;"></div>
+                <div class="mock-chart-bar" style="height:90%;"></div>
+              </div>
+              <div class="mock-bar" style="width:55%;"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ═══════════════════════════════════════════
+       MOST READ
+       ═══════════════════════════════════════════ -->
+  <section class="most-read-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Most Read</span>
+        <h2>What Other Business Owners Are Reading</h2>
+      </div>
+      <div class="blog-grid fade-in">
+        <div class="blog-card">
+          <div class="blog-card-image" style="background:linear-gradient(135deg,#EEF2FF,#E0E7FF);"></div>
+          <div class="blog-card-content">
+            <div class="blog-category">Website Strategy</div>
+            <h3>The 5-Second Test: Does Your Website Pass?</h3>
+            <p>Visitors decide in seconds. Here's what they're looking for and how to make sure they find it.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image" style="background:linear-gradient(135deg,#ECFDF5,#D1FAE5);"></div>
+          <div class="blog-card-content">
+            <div class="blog-category">Automation</div>
+            <h3>5 Repetitive Tasks That Are Costing Your Business Time and Money</h3>
+            <p>If your team is still doing these manually, you're leaving growth on the table.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);"></div>
+          <div class="blog-card-content">
+            <div class="blog-category">AI</div>
+            <h3>Practical Ways Small Businesses Can Use AI Starting Today</h3>
+            <p>AI isn't just for enterprises. Here's how smaller businesses can get real value from it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NEWSLETTER
+       ═══════════════════════════════════════════ -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-card fade-in">
+        <div class="newsletter-content">
+          <h2>Better Thinking.<br>Once a Week.</h2>
+          <p>Every week we share practical ideas on improving websites, automation, AI, and business performance.</p>
+          <ul class="newsletter-promises">
+            <li>No spam.</li>
+            <li>No fluff.</li>
+            <li>Only ideas worth your time.</li>
+          </ul>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you! You\'re subscribed.');">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="newsletter-visual">
+          <div class="newsletter-icon-large">✉️</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FINAL CTA
+       ═══════════════════════════════════════════ -->
   <section class="final-cta">
     <div class="container fade-in">
-      <h2>Want Ideas Tailored to Your Business?</h2>
-      <p>Book a free strategy call and we'll share specific recommendations for your business — no obligations.</p>
-      <a href="contact.html" class="btn btn-white">Book a Free Strategy Call</a>
+      <h2>Ready to Apply These Ideas to Your Business?</h2>
+      <p>Reading is a great place to start. But every business is different. Let's discuss how these principles apply to yours.</p>
+      <a href="contact.html" class="btn btn-white">Book Your Strategy Session</a>
     </div>
   </section>
 
@@ -138,9 +552,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
-            <div class="nav-logo-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
+            <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
             VelintraLabs
           </a>
           <p>We help growing businesses attract more customers and run more efficiently through better systems.</p>
@@ -162,7 +574,7 @@
             <li><a href="services.html">Web Design & Development</a></li>
             <li><a href="services.html">Business Automation</a></li>
             <li><a href="services.html">AI Solutions</a></li>
-            <li><a href="services.html">Strategy & Consulting</a></li>
+            <li><a href="services.html">Business Audit</a></li>
           </ul>
         </div>
         <div class="footer-col">
