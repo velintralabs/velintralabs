@@ -1,0 +1,68 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ECFDF5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D1FAE5;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- AI Brain visualization -->
+  <g transform="translate(400, 200)">
+    <!-- Central node -->
+    <circle cx="0" cy="0" r="60" fill="white" filter="drop-shadow(0 10px 30px rgba(5,150,105,0.2))"/>
+    <circle cx="0" cy="0" r="40" fill="#ECFDF5"/>
+    <path d="M -15 -10 Q 0 -20 15 -10 Q 20 0 15 10 Q 0 20 -15 10 Q -20 0 -15 -10" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="8" fill="#059669"/>
+    
+    <!-- Surrounding nodes -->
+    <g transform="translate(-150, -100)">
+      <circle r="35" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+      <rect x="-15" y="-8" width="30" height="4" rx="2" fill="#059669"/>
+      <rect x="-15" y="0" width="30" height="4" rx="2" fill="#059669"/>
+      <rect x="-15" y="8" width="20" height="4" rx="2" fill="#059669"/>
+    </g>
+    
+    <g transform="translate(150, -100)">
+      <circle r="35" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+      <path d="M -10 0 L -5 10 L 10 -10" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <g transform="translate(-150, 100)">
+      <circle r="35" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+      <circle r="12" fill="none" stroke="#059669" stroke-width="3"/>
+      <circle r="6" fill="#059669"/>
+    </g>
+    
+    <g transform="translate(150, 100)">
+      <circle r="35" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+      <rect x="-12" y="-12" width="24" height="24" rx="4" fill="none" stroke="#059669" stroke-width="3"/>
+    </g>
+    
+    <!-- Connection lines -->
+    <line x1="-120" y1="-80" x2="-30" y2="-20" stroke="#059669" stroke-width="2" opacity="0.3"/>
+    <line x1="120" y1="-80" x2="30" y2="-20" stroke="#059669" stroke-width="2" opacity="0.3"/>
+    <line x1="-120" y1="80" x2="-30" y2="20" stroke="#059669" stroke-width="2" opacity="0.3"/>
+    <line x1="120" y1="80" x2="30" y2="20" stroke="#059669" stroke-width="2" opacity="0.3"/>
+  </g>
+  
+  <!-- Stats -->
+  <g transform="translate(150, 420)">
+    <rect width="140" height="60" rx="30" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+    <text x="70" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#059669" text-anchor="middle">60%</text>
+    <text x="70" y="48" font-family="Inter, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Automated</text>
+  </g>
+  
+  <g transform="translate(330, 420)">
+    <rect width="140" height="60" rx="30" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+    <text x="70" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#059669" text-anchor="middle">3x</text>
+    <text x="70" y="48" font-family="Inter, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Faster</text>
+  </g>
+  
+  <g transform="translate(510, 420)">
+    <rect width="140" height="60" rx="30" fill="white" filter="drop-shadow(0 6px 20px rgba(5,150,105,0.15))"/>
+    <text x="70" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#059669" text-anchor="middle">24/7</text>
+    <text x="70" y="48" font-family="Inter, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">Available</text>
+  </g>
+</svg>
