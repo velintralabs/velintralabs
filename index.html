@@ -15,8 +15,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/world-class.css">
+  <link rel="stylesheet" href="css/masterpiece.css">
 </head>
 <body>
+  <div class="grain-overlay"></div>
+  <div class="loader"><div class="loader-content"><div class="loader-logo"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="loader-bar"><div class="loader-progress"></div></div></div></div>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
@@ -37,7 +40,7 @@
         <li><a href="/contact">Contact</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="/contact" class="btn btn-primary">Book a Strategy Call</a>
+        <a href="/contact" class="btn btn-primary magnetic-btn">Book a Strategy Call</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span>
@@ -49,11 +52,12 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
+    <div class="hero-gradient-mesh"></div>
+    <div class="container" style="position:relative;z-index:1;">
       <h1>Build a Business That Grows <span class="highlight">Without the Chaos.</span></h1>
       <p class="lead">We help growing businesses attract more customers and run more efficiently through high-performance websites, intelligent automation, and AI-powered business systems.</p>
       <div class="hero-ctas">
-        <a href="/contact" class="btn btn-primary">Book a Free Strategy Call</a>
+        <a href="/contact" class="btn btn-primary magnetic-btn">Book a Free Strategy Call</a>
         <a href="/portfolio" class="btn btn-secondary">See Our Work</a>
       </div>
       <div class="hero-image scale-in" style="background:transparent;box-shadow:none;aspect-ratio:auto;max-width:960px;margin:60px auto 0;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--color-border);">
@@ -122,19 +126,19 @@
         <h2>Solutions That Drive Real Results</h2>
       </div>
       <div class="services-grid">
-        <div class="service-card fade-in stagger-1">
+        <div class="service-card tilt-card fade-in stagger-1">
           <img src="images/service-website.png" alt="High-performance website design" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-md);margin-bottom:20px;">
           <h3>Websites That Work as Hard as You Do</h3>
           <p>Your website shouldn't just look good. It should build trust, guide visitors, and generate qualified enquiries.</p>
           <a href="/services" class="btn btn-ghost">Learn More <span class="arrow">→</span></a>
         </div>
-        <div class="service-card fade-in stagger-1">
+        <div class="service-card tilt-card fade-in stagger-1">
           <img src="images/service-automation.png" alt="Business automation systems" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-md);margin-bottom:20px;">
           <h3>Automation That Eliminates Repetitive Work</h3>
           <p>Free your team from manual tasks by connecting your tools and automating repetitive processes.</p>
           <a href="/services" class="btn btn-ghost">Learn More <span class="arrow">→</span></a>
         </div>
-        <div class="service-card fade-in stagger-1">
+        <div class="service-card tilt-card fade-in stagger-1">
           <img src="images/service-ai.png" alt="AI-powered business solutions" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-md);margin-bottom:20px;">
           <h3>AI Solutions That Scale Your Business</h3>
           <p>Implement practical AI systems that improve customer service, streamline operations, and help your business move faster.</p>
@@ -239,7 +243,7 @@
         <p>Each project begins with understanding the business problem—not just redesigning a website.</p>
       </div>
       <div class="featured-work-grid">
-        <div class="featured-card fade-in">
+        <div class="featured-card glow fade-in">
           <div class="featured-card-image">
             <div class="placeholder-icon">
               <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
@@ -252,7 +256,7 @@
             <span class="card-tag">Conversion</span>
           </div>
         </div>
-        <div class="featured-card fade-in">
+        <div class="featured-card glow fade-in">
           <div class="featured-card-image" style="background: linear-gradient(135deg, #ECFDF5, #D1FAE5);">
             <div class="placeholder-icon">
               <svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
@@ -379,5 +383,6 @@
 
   <script src="js/script.js"></script>
   <script src="js/animations.js"></script>
+  <script src="js/masterpiece.js"></script>
 </body>
 </html>

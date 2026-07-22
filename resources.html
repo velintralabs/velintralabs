@@ -15,8 +15,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/world-class.css">
+  <link rel="stylesheet" href="css/masterpiece.css">
 </head>
 <body>
+  <div class="grain-overlay"></div>
+  <div class="loader"><div class="loader-content"><div class="loader-logo"><svg viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="loader-bar"><div class="loader-progress"></div></div></div></div>
 
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
@@ -34,7 +37,7 @@
         <li><a href="/resources" class="active">Resources</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
-      <div class="nav-cta"><a href="/contact" class="btn btn-primary">Book a Strategy Call</a></div>
+      <div class="nav-cta"><a href="/contact" class="btn btn-primary magnetic-btn">Book a Strategy Call</a></div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -52,7 +55,7 @@
         <p class="highlight">Help you make better business decisions.</p>
       </div>
       <div class="hero-ctas fade-in" style="margin-top:32px;">
-        <a href="#resources" class="btn btn-primary">Explore Resources</a>
+        <a href="#resources" class="btn btn-primary magnetic-btn">Explore Resources</a>
         <a href="#newsletter" class="btn btn-secondary">Subscribe for New Resources</a>
       </div>
     </div>
@@ -130,45 +133,45 @@
         <p>Practical resources you can use immediately. No fluff — just actionable tools.</p>
       </div>
       <div class="downloads-grid fade-in">
-        <div class="download-card featured-download">
+        <div class="download-card tilt-card featured-download">
           <img src="images/service-website.png" alt="Website Performance Checklist" class="download-card-image">
-          <div class="download-card-header">
+          <div class="download-card tilt-card-header">
             <span class="download-badge">Most Popular</span>
           </div>
           <h3>Website Performance Checklist</h3>
           <p>Can your website pass the 50-point performance review? Covers UX, speed, accessibility, SEO, trust signals, and conversion optimization.</p>
           <div class="download-meta"><span>📄 PDF</span><span>⏱ 15 min</span></div>
-          <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.875rem;">Download Free</a>
+          <a href="#" class="btn btn-primary magnetic-btn" style="width:100%;justify-content:center;font-size:0.875rem;">Download Free</a>
         </div>
-        <div class="download-card">
+        <div class="download-card tilt-card">
           <img src="images/service-automation.png" alt="Business Automation Playbook" class="download-card-image">
           <h3>Business Automation Playbook</h3>
           <p>Learn how to identify repetitive work, prioritize automation opportunities, and build workflows that save time.</p>
           <div class="download-meta"><span>📄 PDF</span></div>
           <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;font-size:0.875rem;">Download Free</a>
         </div>
-        <div class="download-card">
+        <div class="download-card tilt-card">
           <img src="images/blog-website-doubt.png" alt="Website Launch Checklist" class="download-card-image">
           <h3>Website Launch Checklist</h3>
           <p>Launching a website? Avoid common mistakes with our pre-launch checklist covering performance, SEO, analytics, and security.</p>
           <div class="download-meta"><span>📄 PDF</span></div>
           <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;font-size:0.875rem;">Download Free</a>
         </div>
-        <div class="download-card">
+        <div class="download-card tilt-card">
           <img src="images/service-ai.png" alt="AI Readiness Guide" class="download-card-image">
           <h3>AI Readiness Guide</h3>
           <p>Is your business ready for AI? Understand where AI creates value — and where it doesn't.</p>
           <div class="download-meta"><span>📄 PDF</span></div>
           <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;font-size:0.875rem;">Download Free</a>
         </div>
-        <div class="download-card">
+        <div class="download-card tilt-card">
           <img src="images/hero-systems.png" alt="Business Systems Assessment" class="download-card-image">
           <h3>Business Systems Assessment</h3>
           <p>Evaluate how well your current systems support growth. Identify gaps before they become expensive.</p>
           <div class="download-meta"><span>📄 PDF</span></div>
           <a href="#" class="btn btn-secondary" style="width:100%;justify-content:center;font-size:0.875rem;">Download Free</a>
         </div>
-        <div class="download-card">
+        <div class="download-card tilt-card">
           <img src="images/insight-featured.png" alt="Lead Generation Blueprint" class="download-card-image">
           <h3>Lead Generation Blueprint</h3>
           <p>Learn how high-performing websites consistently turn visitors into qualified enquiries.</p>
@@ -556,5 +559,6 @@
 
   <script src="js/script.js"></script>
   <script src="js/animations.js"></script>
+  <script src="js/masterpiece.js"></script>
 </body>
 </html>
